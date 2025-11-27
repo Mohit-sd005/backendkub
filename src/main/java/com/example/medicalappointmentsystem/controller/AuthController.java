@@ -12,7 +12,9 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "http://localhost:5173") // ✅ Allow frontend React app
+// @CrossOrigin(origins = "http://localhost:5173") // ✅ Allow frontend React app
+    @CrossOrigin(origins = "*")
+
 public class AuthController {
 
     @Autowired
