@@ -11,7 +11,9 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/users") // all user-related endpoints
-@CrossOrigin(origins = "http://localhost:5173") // allow frontend
+// @CrossOrigin(origins = "http://localhost:5173") // allow frontend
+    @CrossOrigin(origins = "*")
+
 public class UserController {
 
     private final UserRepository userRepository;
