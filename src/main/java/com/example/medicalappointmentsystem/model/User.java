@@ -27,7 +27,8 @@ public class User {
     private String password;
 
     // ✅ Map to DB column "phone_number"
-    @Column(name = "phone_number", nullable = false, unique = true)
+    // @Column(name = "phone_number", nullable = false, unique = true)
+    @Column(name = "phone_number", nullable = true)
     private String phoneNumber;
 
     @Enumerated(EnumType.STRING)
